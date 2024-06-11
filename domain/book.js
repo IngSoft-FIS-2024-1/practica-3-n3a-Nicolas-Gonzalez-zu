@@ -29,7 +29,7 @@ class Book {
   }
 
   setTitle(title) {
-    if (typeof title !== "string") {
+    if (typeof title !== 'string') {
       throw new Error();
     }
     title = title.trim();
@@ -40,18 +40,18 @@ class Book {
   }
 
   setAuthor(author) {
-    if (typeof author !== "string") {
+    if (typeof author !== 'string') {
       throw new Error();
     }
     author = author.trim();
     if (author.length === 0) {
-      author = "Anónimo";
+      author = 'Anónimo';
     }
     this.#author = author;
   }
 
   setPages(pages) {
-    if (typeof pages !== "number" || isNaN(pages)) {
+    if (typeof pages !== 'number' || isNaN(pages)) {
       throw new Error();
     }
     if (pages < 1) {
@@ -63,7 +63,7 @@ class Book {
 
   setWords(amount) {
     // TODO
-    if (typeof amount !== "number") {
+    if (typeof amount !== 'number') {
       throw new Error();
     }
 
